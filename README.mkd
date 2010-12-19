@@ -1,0 +1,19 @@
+
+
+# Locale.js
+
+
+Borrowed some from jifty i18n plugin.
+
+Added gettext format support.
+
+    _('Hello %1' , 'John')
+
+# Usage
+
+    Locale.init({ lang: 'fr' , path: '/static/dict' });
+
+    alert( _('Hello world') );
+
+    alert( _('Hello %1',"John") );
+
