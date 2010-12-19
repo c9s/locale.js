@@ -24,3 +24,7 @@ Then in your application:
     alert( _('Hello %1',"John") );
 
     Locale.switch( 'en' );
+
+# Todo
+
+* Inline support?
