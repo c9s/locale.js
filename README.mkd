@@ -2,8 +2,7 @@
 
 # Locale.js
 
-
-Borrowed some from jifty i18n plugin.
+A very simple i18n js, borrowed some from jifty i18n plugin.
 
 Added gettext format support.
 
@@ -11,9 +10,17 @@ Added gettext format support.
 
 # Usage
 
+Put your dictionary json under `static/dict`:
+
+    static/dict/en.json
+    static/dict/zh_tw.json
+
+Then in your application:
+
     Locale.init({ lang: 'fr' , path: '/static/dict' });
 
     alert( _('Hello world') );
 
     alert( _('Hello %1',"John") );
 
+    Locale.switch( 'en' );
